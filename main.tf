@@ -25,7 +25,7 @@ provider "aws" {
 
 resource "random_pet" "sg" {}
 
-data "aws_ami" "ubuntu" {
+/*data "aws_ami" "ubuntu" {
   most_recent = true
 
   filter {
@@ -39,7 +39,7 @@ data "aws_ami" "ubuntu" {
   }
 
   owners = ["026467586392"] # Canonical
-}
+}*/
 
 resource "aws_instance" "web" {
   //ami                    = data.aws_ami.ubuntu.id
